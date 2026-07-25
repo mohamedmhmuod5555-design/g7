@@ -23,10 +23,10 @@ st.title("أهلا بك في لعبتي ")
 st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تاكيد الاجابه "):
-  st.session_state.count=+1
+ st.session_state.count=+1
  if number==sc:
-  print("you are winner ")
-  st.session_state.num=+1
+   print("you are winner ")
+   st.session_state.num=+1
  else:
   print("your answer is not true ") 
   del  st.session_state.num
