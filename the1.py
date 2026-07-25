@@ -29,7 +29,7 @@ if st.button("تاكيد الاجابه "):
    st.session_state.num=+1
  else:
   st.error( "اجابتك خاطءه الاجابه الصحيحه كانت  ") 
-  del  st.session_state.num
+ st.session_state.num=0
 if st.button(" السؤال التالي "):
  del st.session_state.num1 
  del st.session_state.num2
