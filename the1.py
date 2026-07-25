@@ -2,6 +2,8 @@ import random
 import streamlit as st 
 if 'num' not in st.session_state:
   st.session_state.num=0
+ if 'count' not in st.session_state:
+  st.session_state.count=0 
 if 'num1' not in st.session_state:
  st.session_state.num1=random.randint(1,20)
  st.session_state.num2=random.randint(1,20)
@@ -21,6 +23,7 @@ st.title("أهلا بك في لعبتي ")
 st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تاكيد الاجابه "):
+  st.session_state.count=+1
  if number==sc:
   print("you are winner ")
   st.session_state.num=+1
@@ -32,4 +35,4 @@ if st.button(" السؤال التالي "):
  del st.session_state.num2
  del st.session_state.sign
  st.rerun()
-st.write(num)
+st.write("نقاطك تكون " ,st.session_state.num"من ",st.session_state.count"سؤال ")
