@@ -5,7 +5,7 @@ if 'num' not in st.session_state:
 if 'sc' not in st.session_state:
   st.session_state.sc=0
 if 'count' not in st.session_state:
- st.session_state.count=0
+ st.session_state.count
 if 'num1' not in st.session_state:
  st.session_state.num1=random.randint(1,20)
  st.session_state.num2=random.randint(1,20)
