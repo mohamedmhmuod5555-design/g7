@@ -28,7 +28,7 @@ if st.button("تاكيد الاجابه "):
  st.session_state.count=+1
  if number==sc:
    st.success("اجابتك صحيحه احسنت  ")
-   st.session_state.num=+1
+   st.session_state.num+=1
  else:
   st.error(f"اجابتك خاطئه الاجابه الصحيحه كانت: {st.session_state.sc}")
  st.session_state.num=0
