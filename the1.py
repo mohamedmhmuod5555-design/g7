@@ -29,7 +29,7 @@ if st.button("تاكيد الاجابه "):
   if number==sc:
    st.success("اجابتك صحيحه احسنت  ")
    st.session_state.num+=1
- else:
+  else:
   st.error(f"اجابتك خاطئه الاجابه الصحيحه كانت: {st.session_state.sc}")
  st.session_state.num=0
 if st.button(" السؤال التالي "):
