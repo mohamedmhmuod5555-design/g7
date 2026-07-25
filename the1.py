@@ -19,7 +19,7 @@ if sign=='*':
  sc=num1*num2
 if sign=='/':
  sc=num1/num2
-st.title("Welcome to Mohamed game  ")
+st.title("Welcome to Mohamed's game  ")
 st.write(num1,sign,num2)
 number = st.number_input("أدخل النتيجة", key=f"input_{st.session_state.num1}_{st.session_state.num2}")
 if st.button("تاكيد الاجابه "):
