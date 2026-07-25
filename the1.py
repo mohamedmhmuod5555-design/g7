@@ -35,4 +35,4 @@ if st.button(" السؤال التالي "):
  del st.session_state.num2
  del st.session_state.sign
  st.rerun()
-st.write("نقاطك تكون " ,st.session_state.num"من ",st.session_state.count"سؤال ")
+st.write("نقاطك تكون " ,st.session_state.num,"من ",st.session_state.count,"سؤال ")
