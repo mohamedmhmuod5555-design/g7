@@ -1,9 +1,9 @@
 import random
 import streamlit as st 
 if 'num' not in st.session_state:
-  st.session_state.num=0
+  st.session_state.num
 if 'sc' not in st.session_state:
-  st.session_state.sc=0  
+  st.session_state.sc
 if 'count' not in st.session_state:
  st.session_state.count=0
 if 'num1' not in st.session_state:
@@ -25,7 +25,7 @@ st.title("أهلا بك في لعبتي ")
 st.write(num1,sign,num2)
 number = st.number_input("أدخل النتيجة", key=f"input_{st.session_state.num1}_{st.session_state.num2}")
 if st.button("تاكيد الاجابه "):
-st.session_state.num += 1
+st.session_state.num+=1
  if number==sc:
    st.success("اجابتك صحيحه احسنت  ")
    st.session_state.num+=1
